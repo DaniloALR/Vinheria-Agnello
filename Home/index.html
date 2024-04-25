@@ -12,18 +12,43 @@
 </head>
 <body>
     <section id="home" class="home-img">
+        <div id="container-cabecalho"> 
+            <div class="container">
+                <header class="cabecalho">
+                    <a href="#footer" class="contato">Contato</a>
+                    <a href="#" class="logo">
+                        <img src="../img/logo.png" alt="Vinheria Agnello">
+                    </a>
+                    <button id="menu" href="#" class="menu">
+                        <img class="menu-img" src="../img/menu.png" alt="menu">
+                    </button>
+                </header>
+            </div>
+        </div>
         <div class="container">
-            <header class="cabecalho">
-                <a href="#footer" class="contato">Contato</a>
-                <img src="../img/logo.png" alt="Vinheria Agnello">
-                <a href="#" class="menu">
-                    <img class="menu-img" src="../img/menu.png" alt="menu">
-                </a>
-            </header>
             <div class="home-content">
                 <h2>Seja bem-vindo à nossa raiz.</h2>
                 <a href="#familia">Conoscere</a>
             </div>
+        </div>
+        <div id="nav-container" class="nav-container">
+            <button id="close" class="close-btn">
+                <img src="../img/close.png" alt="fechar">
+            </button>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#">Conheça nossos vinhos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Faça o tour</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a id="btn-contato" href="#footer">Contato</a>
+                </li>
+            </ul>
         </div>
     </section>
     <section id="familia" class="familia-img">
@@ -78,6 +103,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     font-family: 'Italiana', sans-serif;
     color: #F8F5C1;
     text-decoration: none;
+    overflow-x: hidden;
 }
 
 html{

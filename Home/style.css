@@ -1,3 +1,13 @@
+::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #F8F5C1;
+    border-radius: 8px;
+}
+
 h2,p,a,button,input,textarea,h1,img{
     z-index: 1;
 }
@@ -11,7 +21,6 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    padding-top: 100px;
     position: relative;
 }
 
@@ -25,19 +34,43 @@ a:hover{
     content: '';
 }
 
+#container-cabecalho{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    z-index: 2;
+    transition: all ease .3s;
+}
+
+.container-cabecalho{
+    width: 100vw;
+    height: 200px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+}
+
 .cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1024px;
+    padding-top: 80px;
 }
-
 
 .contato{
     font-size: 24px;
 }
 
+.logo:hover{
+    border: none;
+}
+
 .cabecalho .menu{
     border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .menu-img{
@@ -48,7 +81,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 400px;
 }
 
 .home-content h2{
@@ -60,6 +93,41 @@ a:hover{
 
 .home-content a{
     font-size: 24px;
+}
+
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #010101;
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn{
+    background: transparent;
+    border: none;
+    align-self: flex-start;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.close-btn img{
+    width: 40px;
+}
+
+.nav{
+    height: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-item a{
+    font-size: 36px;
 }
 
 /* Seção familia */
