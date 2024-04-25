@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Italiana', sans-serif;
+    color: #F8F5C1;
+    text-decoration: none;
+}
+
+.line{
+    background-color: #F8F5C1;
+    height: 70px;
+    width: 2px;
+    margin: 100px 0;
+}
+
+body{
+    background-color: #0F0F0F;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home-img{
+    background-image: url('./img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato{
+    font-size: 24px;
+}
+
+.menu{
+    width: 40px;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.home-content h2{
+    font-size: 54px;
+    max-width: 420px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.home-content a{
+    font-size: 24px;
+}
+
+/* Seção familia */
+
+.familia-img{
+    background-image: url('./img/fundo-familia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.familia-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.familia-container h2{
+    font-size: 54px;
+}
+
+.familia-container p{
+    font-family: 'Alice', serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+.familia-container a{
+    font-size: 24px;
+}
+
+/* Seção tradição */
+
+.tradicao-img{
+    background-image: url('./img/fundo-tradicao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tradicao-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.tradicao-container h2{
+    font-size: 54px;
+}
+
+.tradicao-container p{
+    font-family: 'Alice', serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+.tradicao-container a{
+    font-size: 24px;
+}
+
+/* Seção tour */
+
+.tour-img{
+    background-image: url('./img/fundo-maos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.tour-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.tour-container p{
+    font-size: 24px;
+    max-width: 750px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tour-container a{
+    font-size: 24px;
+}
+
+/* Seção footer */
+
+.footer-container{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+}
+
+.formulario h2{
+    margin-bottom: 30px;
+}
+
+.formulario input, textarea{
+    background: transparent;
+    border: 1px solid #F8F5C1;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.formulario input::placeholder, textarea::placeholder{
+    color: #F8F5C1;
+}
+
+.formulario button{
+    max-width: 120px;
+    padding: 4px 0;
+    color: #0F0F0F;
+    background-color: #F8F5C1;
+    border-radius: 8px;
+    border: none;
+}
