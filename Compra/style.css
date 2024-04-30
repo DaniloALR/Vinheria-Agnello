@@ -1,0 +1,375 @@
+body{
+    position:relative;
+}
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #F8F5C1;
+    border-radius: 8px;
+}
+
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #010101;
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn{
+    background: transparent;
+    border: none;
+    align-self: flex-start;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.close-btn img{
+    width: 40px;
+}
+
+.nav{
+    height: 50px;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-item a{
+    font-size: 36px;
+}
+
+.contato:hover{
+    border: none;
+}
+
+a:hover{
+    border-bottom: 1px solid #F8F5C1;
+}
+
+#container-cabecalho-listagem{
+    width: 100vw;
+    height: 200px;
+    z-index: 2;
+    transition: all ease .3s;
+}
+
+.container-cabecalho-listagem{
+    width: 100vw;
+    height: 200px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    padding-top: 80px;
+}
+
+.contato{
+    font-size: 24px;
+}
+
+.logo:hover{
+    border: none;
+}
+
+.cabecalho .menu{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-img{
+    width: 40px;
+}
+
+.produto-container{
+    margin-top: 100px;
+}
+
+.produto-container img{
+    width: 600px;
+}
+
+.produto-container .container{
+    display: flex;
+    gap: 50px;
+}
+
+.produto-container h2{
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.produto-container .preco{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.txt-cupom{
+    display: none;
+    font-size: 14px;
+}
+
+.produto-container span:first-child{
+    color: #f8F5C1;
+    font-size: 25px;
+}
+
+.produto-container span{
+    color: #ccc;
+    font-size: 16px;
+}
+
+.cupom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cupom input{
+    width: 170px;
+    background: transparent;
+    border: 1px solid #F8F5C1;
+    padding-left: 5px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.cupom input::placeholder{
+    color: #F8F5C1;
+}
+
+.cupom button{
+    background-color: #F8F5C1;
+    color: #0f0f0f;
+    padding:7px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.product > button{
+    background-color: #F8F5C1;
+    font-size: 16px;
+    color: #0f0f0f;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.harmoniza{
+    padding-top: 100px;
+}
+
+.harmoniza h2{
+    font-size: 32px;
+    margin-bottom: 64px;
+}
+
+.comida-container{
+    display: flex;
+    gap: 20px;
+}
+
+.comida img{
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.comida{
+    position: relative;
+}
+
+.comida:hover{
+    .overlay{
+        display: flex;
+    }
+}
+
+.overlay{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.footer-container{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario{
+    width: 400px
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario h2{
+    margin-bottom: 30px;
+}
+
+.formulario input, textarea{
+    background: transparent;
+    border: 1px solid #F8F5C1;
+    height: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.formulario textarea{
+    resize: none;
+    padding-top: 10px;
+    height: 77px;
+}
+
+.formulario input::placeholder, textarea::placeholder{
+    color: #F8F5C1;
+}
+
+.formulario button{
+    max-width: 120px;
+    padding: 4px 0;
+    color: #0F0F0F;
+    background-color: #F8F5C1;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario button:hover{
+    opacity: .7;
+}
+
+.endereco{
+    display: flex;
+    flex-direction: column;
+}
+
+.endereco img{
+    width: 30px;
+    transition: width 0.2s;
+}
+
+.endereco-dados{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.social{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social a{
+    border: none;
+}
+
+.social img:hover{
+    width: 34px;
+}
+
+.endereco > a{
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+}
+
+.overlay-modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-comprar{
+    padding: 30px;
+    background-color: #0F0F0F;
+}
+
+.modal-comprar h2{
+    margin-bottom: 20px;
+}
+
+.modal-comprar p{
+    margin-top: 20px;
+}
+
+.modal-comprar p:last-child{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.modal-msg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.pop-up-msg{
+    padding: 30px;
+    text-align: center;
+    max-width: 300px;
+    background-color: #f8F5C1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up-msg p:first-child{
+    color: #010101;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.pop-up-msg p:last-child{
+    color: #010101;
+    font-size: 16px;
+}

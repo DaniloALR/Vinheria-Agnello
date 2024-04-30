@@ -1,3 +1,8 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
 ::-webkit-scrollbar{
     background: transparent;
     width: 5px;
@@ -16,6 +21,20 @@ a:hover{
     border-bottom: 1px solid #F8F5C1;
 }
 
+.contato{
+    display: flex;
+    align-items: center;
+}
+
+.contato img{
+    width: 42px;
+    height: 42px;
+}
+
+.contato:hover{
+    border: none;
+}
+
 .home-img{
     background-image: url('../img/fundo.png');
     background-repeat: no-repeat;
@@ -32,49 +51,6 @@ a:hover{
     height: 100%;
     background-color: rgba(0,0,0,0.5);
     content: '';
-}
-
-#container-cabecalho{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 200px;
-    z-index: 2;
-    transition: all ease .3s;
-}
-
-.container-cabecalho{
-    width: 100vw;
-    height: 200px;
-    background-color: rgba(0,0,0,0.9);
-    z-index: 2;
-}
-
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1024px;
-    padding-top: 80px;
-}
-
-.contato{
-    font-size: 24px;
-}
-
-.logo:hover{
-    border: none;
-}
-
-.cabecalho .menu{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.menu-img{
-    width: 40px;
 }
 
 .home-content{
@@ -124,6 +100,7 @@ a:hover{
     height: 50px;
     display: flex;
     gap: 50px;
+    list-style: none;
 }
 
 .nav-item a{
@@ -344,4 +321,39 @@ a:hover{
     text-align: center;
     margin-top: 30px;
     border: none;
+}
+
+.modal-msg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.pop-up-msg{
+    padding: 30px;
+    text-align: center;
+    max-width: 300px;
+    background-color: #f8F5C1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up-msg p:first-child{
+    color: #010101;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.pop-up-msg p:last-child{
+    color: #010101;
+    font-size: 16px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinheria Agnello</title>
+    <link rel="shortcut icon" href="../img/wine.png">
     <link rel="stylesheet" href="../GlobalStyle.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,9 @@
         <div id="container-cabecalho"> 
             <div class="container">
                 <header class="cabecalho">
-                    <a href="#footer" class="contato">Contato</a>
+                    <a href="#" class="contato">
+                        <img src="../img/cart.png" alt="carrinho">
+                    </a>
                     <a href="#" class="logo">
                         <img src="../img/logo.png" alt="Vinheria Agnello">
                     </a>
@@ -37,13 +40,13 @@
             </button>
             <ul class="nav">
                 <li class="nav-item">
-                    <a href="#">Conheça nossos vinhos</a>
+                    <a href="../Listagem/index.html">Conheça nossos vinhos</a>
                 </li>
                 <li class="nav-item">
                     <a href="#">Faça o tour</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Login</a>
+                    <a href="../Login/index.html">Login</a>
                 </li>
                 <li class="nav-item">
                     <a id="btn-contato" href="#footer">Contato</a>
@@ -64,7 +67,7 @@
             <h2>Tradizione</h2>
             <div class="line"></div>
             <p>Na Vinheria Agnello, cada gota de vinho conta uma história de paixão e tradição enraizada nas encostas ensolaradas da Toscana. Com anos de experiência artesanal, nossa vinícola celebra a arte de criar vinhos excepcionais que capturam a essência da região e encantam os paladares mais exigentes. </p>
-            <a href="#">Vinhos</a>
+            <a href="../Listagem/index.html">Vinhos</a>
         </div>
     </section>
     <section id="tour" class="tour-img">
@@ -78,11 +81,11 @@
             <div class="formulario">
                 <h2>Dubbi?</h2>
                 <form>
-                    <input type="text" placeholder="Nome completo">
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Telefone">
-                    <textarea placeholder="Sua mensagem"></textarea>
-                    <button type="submit">Enviar</button>
+                    <input id="nome" type="text" placeholder="Nome completo">
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="telefone" type="tel" placeholder="Telefone">
+                    <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+                    <button id="btn-msg" type="submit">Enviar</button>
                 </form>
             </div>
             <div class="endereco">
@@ -101,8 +104,15 @@
                 </div>
                 <a href="">Política de privacidade</a>
             </div>
+            
         </div>
     </footer>
+    <div class="modal-msg">
+        <div class="pop-up-msg">
+            <p>Mensagem enviada com sucesso</p>
+            <p>*Aperte qualquer parte da tela para sair</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

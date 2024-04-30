@@ -5,7 +5,6 @@
     font-family: 'Italiana', sans-serif;
     color: #F8F5C1;
     text-decoration: none;
-    overflow-x: hidden;
 }
 
 html{
@@ -13,7 +12,8 @@ html{
 }
 
 body{
-    background-color: #010101;
+    background-color: #0f0f0f;
+    overflow-x: hidden;
 }
 
 .container{
@@ -27,4 +27,43 @@ body{
     height: 70px;
     width: 2px;
     margin: 100px 0;
+}
+
+#container-cabecalho{
+    width: 100vw;
+    height: 200px;
+    transition: all ease .3s;
+}
+
+.container-cabecalho{
+    width: 100vw;
+    height: 200px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    padding-top: 80px;
+}
+
+.contato{
+    font-size: 24px;
+}
+
+.logo:hover{
+    border: none;
+}
+
+.cabecalho .menu{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-img{
+    width: 40px;
 }
