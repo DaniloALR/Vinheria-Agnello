@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vinheria Agnello</title>
+        <link rel="shortcut icon" href="../img/wine.png">
+        <link rel="stylesheet" href="../GlobalStyle.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alice&family=Italiana&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <section id="container-cabecalho"> 
+        <div class="container">
+            <header class="cabecalho">
+                <a href="#" class="contato">
+                    <img src="../img/cart.png" alt="carrinho">
+                </a>
+                <a href="../Home/index.html" class="logo">
+                    <img src="../img/logo.png" alt="Vinheria Agnello">
+                </a>
+                <button id="menu" href="#" class="menu">
+                    <img class="menu-img" src="../img/menu.png" alt="menu">
+                </button>
+            </header>
+        </div>
+        <div id="nav-container" class="nav-container">
+            <button id="close" class="close-btn">
+                <img src="../img/close.png" alt="fechar">
+            </button>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="../Listagem/index.html">Conheça nossos vinhos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Faça o tour</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Login/index.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a id="btn-contato" href="#footer">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="produto-container">
+        <div class="container">
+            <img src="../img/img-slider-3.png" alt="">
+            <div class="product">
+                <h2>Vinho Bom</h2>
+                <p class="txt-cupom">*Cupom de desconto aplicado</p>
+                <p class="preco">R$ <span id="preco">120,00</span> <br/>
+                <span>6x de R$ 20,00</span>
+                </p>
+                <form class="cupom">
+                    <input id="cupom" type="text" placeholder="Cupom">
+                    <button id="btn-cupom">Enviar</button>
+                </form>
+                <button id="btn-comprar" class="btn-adc-carrinho">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </section>
+    <section class="harmoniza">
+        <div class="container">
+            <h2>Ótimo com</h2>
+            <div class="comida-container">
+                <div class="comida">
+                    <img src="https://www.receiteria.com.br/wp-content/uploads/risoto-de-camarao-14.jpg" alt="">
+                    <div class="overlay" >
+                        Risoto de camarão
+                    </div>
+                </div>
+                <div class="comida">
+                    <img src="https://s2-receitas.glbimg.com/GToJPVardYjpzSeMfNdhCRqp6NU=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/F/5/hm5zNWRiAawYNSghKZbw/capa-materia-gshow-2022-02-16t145245.399.png" alt="">
+                    <div class="overlay" >
+                        Lasanha a bolonhesa
+                    </div>
+                </div>
+                <div class="comida">
+                    <img src="https://renata.com.br/images/receitas/182/renata-imagem-receitas-nhoque-de-batata-1-xl.webp" alt="">
+                    <div class="overlay">
+                        Nhoque de batata ao sugo
+                    </div>
+                </div>
+                <div class="comida">
+                    <img src="https://www.estadao.com.br/resizer/v2/PTU5WSTNV5C77DJX5GR7YLVDRM.jpg?quality=80&auth=a905856ed9cd135170e4a14484a24dc06222832550ebeec42233394e23aff2f2&width=720&height=503&smart=true" alt="">
+                    <div class="overlay" >
+                        Carbonara
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container container">
+            <div class="formulario">
+                <h2>Dubbi?</h2>
+                <form>
+                    <input id="nome" type="text" placeholder="Nome completo">
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="telefone" type="tel" placeholder="Telefone">
+                    <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+                    <button id="btn-msg" type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="endereco">
+                <div class="social">
+                    <a href=""><img src="../img/instagram.svg" alt="Instagram"></a>
+                    <a href=""><img src="../img/facebook.svg" alt="Facebook"></a>
+                    <a href=""><img src="../img/twitter.svg" alt="Twitter"></a>
+                </div>
+                <div class="endereco-dados">
+                    <img src="../img/endereco.png" alt="">
+                    <p>Rua dos banzeiros, 123, Vila do Chaves - SP</p>
+                </div>
+                <div class="endereco-dados">
+                    <img src="../img/telefone.svg" alt="">
+                    <p>(11) 98818-1234 | (11)99819-1234</p>
+                </div>
+                <a href="">Política de privacidade</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-msg">
+        <div class="pop-up-msg">
+            <p>Mensagem enviada com sucesso</p>
+            <p>*Aperte qualquer parte da tela para sair</p>
+        </div>
+    </div>
+    <div class="overlay-modal">
+        <div class="modal-comprar">
+            <h2>Vinho Bom</h2>
+            <p>Adicionado ao carrinho com sucesso</p>
+            <p>Você tem R$<span id="total">0</span> no seu carrinho</p>
+            <p>*Clique em qualquer parte da tela para fechar</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

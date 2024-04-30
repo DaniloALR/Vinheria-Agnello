@@ -1,0 +1,457 @@
+body{
+    position:relative;
+}
+
+a:hover{
+    border-bottom: 1px solid #F8F5C1;
+}
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #F8F5C1;
+    border-radius: 8px;
+}
+
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #010101;
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn{
+    background: transparent;
+    border: none;
+    align-self: flex-start;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.close-btn img{
+    width: 40px;
+}
+
+.nav{
+    height: 50px;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-item a{
+    font-size: 36px;
+}
+
+.contato:hover{
+    border: none;
+}
+
+#container-cabecalho-listagem{
+    width: 100vw;
+    height: 200px;
+    z-index: 2;
+    transition: all ease .3s;
+}
+
+.container-cabecalho-listagem{
+    width: 100vw;
+    height: 200px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    padding-top: 80px;
+}
+
+.contato{
+    font-size: 24px;
+}
+
+.logo:hover{
+    border: none;
+}
+
+.cabecalho .menu{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-img{
+    width: 40px;
+}
+
+.carousel-container {
+    width: 100%;
+    max-height: 900px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--lx-gap);
+
+    .carousel {
+        aspect-ratio: 16/9;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .item {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .caption {
+                width: 100%;
+                padding: var(--lx-space-01);
+                position: absolute;
+                bottom: 0;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 12px;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            &.active {
+                opacity: 1;
+                display: block;
+            }
+        } 
+    }
+
+    .btn {
+        padding: 1em 2em;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 900;
+        color: #10100e;
+        background: transparent;
+        transition: transform 0.2s ease-in-out;
+
+        &:active,
+        &:focus {
+            transform: translateY(-50%) scale(0.9);
+        }
+
+        &:hover {
+            transform: translateY(-50%) scale(0.96);
+        }
+    }
+
+    .prev {
+        left: 25%;
+    }
+
+    .next {
+        right: 30%;
+    }
+
+    .dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            background-color: #242421;
+            transition: background-color 0.2s ease;
+            border-radius: 50%;
+
+            &.active,
+            &:hover {
+                background-color: #ffffe6;
+            }
+        }
+    }
+}
+
+.btn-prev-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background-color: #000;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.btn-prev-container:hover{
+    opacity: 0.9;
+}
+
+.btn-next-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 240px;
+    background-color: #000;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.btn-next-container:hover{
+    opacity: 0.9;
+}
+
+section h2{
+    font-size: 40px;
+    margin-bottom: 54px;
+    margin-top: 80px;
+}
+
+#adocar{
+    max-width: 100vw;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#adocar > .container{
+    max-width: 100%;
+    width: 100%;
+}
+
+.adocar-container{
+    display: flex;
+    flex-flow: nowrap;
+    margin: 0 auto;
+    max-width: 1530px;
+    width: 100%;
+    max-height: 352px;
+    height: 100%;
+    position: relative;
+}
+
+.vinho:hover{
+    .overlay{
+        display: flex;
+    }
+}
+
+.vinho{
+    position: relative;
+}
+
+.overlay{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.overlay img{
+    max-width: 40px;
+    max-height: 40px;
+    margin-top: 20px;
+}
+
+.vinhod img{
+    width: 260px;
+    height: 350px;
+}
+
+.btn-vinho{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-vinho-prev,
+.btn-vinhom-prev{
+    margin-right: 70px;
+}
+
+.btn-vinho-next,
+.btn-vinhom-next{
+    margin-left: 70px;
+}
+
+.title-container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contentd,
+.contentm,
+.contentp{
+    max-width: 1355px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-flow: nowrap;
+    overflow: hidden;
+}
+
+.footer-container{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.formulario{
+    width: 400px
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario h2{
+    margin-bottom: 30px;
+}
+
+.formulario input, textarea{
+    background: transparent;
+    border: 1px solid #F8F5C1;
+    height: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.formulario textarea{
+    resize: none;
+    padding-top: 10px;
+    height: 77px;
+}
+
+.formulario input::placeholder, textarea::placeholder{
+    color: #F8F5C1;
+}
+
+.formulario button{
+    max-width: 120px;
+    padding: 4px 0;
+    color: #0F0F0F;
+    background-color: #F8F5C1;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario button:hover{
+    opacity: .7;
+}
+
+.endereco{
+    display: flex;
+    flex-direction: column;
+}
+
+.endereco img{
+    width: 30px;
+    transition: width 0.2s;
+}
+
+.endereco-dados{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.social{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social a{
+    border: none;
+}
+
+.social img:hover{
+    width: 34px;
+}
+
+.endereco > a{
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+}
+
+.modal-msg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.pop-up-msg{
+    padding: 30px;
+    text-align: center;
+    max-width: 300px;
+    background-color: #f8F5C1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up-msg p:first-child{
+    color: #010101;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.pop-up-msg p:last-child{
+    color: #010101;
+    font-size: 16px;
+}

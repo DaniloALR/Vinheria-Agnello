@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Italiana', sans-serif;
+    color: #F8F5C1;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.line{
+    background-color: #F8F5C1;
+    height: 70px;
+    width: 2px;
+    margin: 100px 0;
+}
+
+#container-cabecalho{
+    width: 100vw;
+    height: 200px;
+    transition: all ease .3s;
+}
+
+.container-cabecalho{
+    width: 100vw;
+    height: 200px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    padding-top: 80px;
+}
+
+.contato{
+    font-size: 24px;
+}
+
+.logo:hover{
+    border: none;
+}
+
+.cabecalho .menu{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-img{
+    width: 40px;
+}
